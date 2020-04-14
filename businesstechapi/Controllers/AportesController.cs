@@ -28,5 +28,24 @@ namespace businesstechapi.Controllers
         {
            return  _context.Aportes.ToList();
         }
+
+
+        [HttpPost]
+        public void Insere(Aportes a)
+        {
+
+            _context.Aportes.Add(new Aportes()
+            {
+                idcliente = 130,
+                valor = 100,
+                percentual = 10,
+                dataInicio = DateTime.Now,
+                tempoMeses = 12
+            });
+
+            _context.SaveChanges();
+        }
+
+
     }
 }
