@@ -10,6 +10,8 @@ namespace businesstechapi.Models
         public static void Initialize(BTContexto context)
         {
             context.Database.EnsureCreated();
+
+
         }
     }
 }
